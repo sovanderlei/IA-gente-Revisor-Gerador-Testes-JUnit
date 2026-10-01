@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "description": "Gera testes JUnit 5 + Mockito",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 6000,
+      "temperature": 0.2,
+      "top_p": 0.95
+    }
+  },
+  "input_variables": [
+    {
+      "name": "source_code",
+      "description": "Código-fonte Java original",
+      "required": true
+    },
+    {
+      "name": "analysis_json",
+      "description": "JSON da análise",
+      "required": true
+    },
+    {
+      "name": "package_name",
+      "description": "Package do teste",
+      "required": true
+    }
+  ]
+}

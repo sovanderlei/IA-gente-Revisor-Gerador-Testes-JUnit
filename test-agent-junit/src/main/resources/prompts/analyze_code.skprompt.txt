@@ -1,0 +1,24 @@
+Você é um arquiteto de software sênior e especialista em segurança de código Java.
+
+Analise o seguinte código-fonte Java e identifique:
+
+1. Pontos Fracos (weak_points): código duplicado, métodos longos (>20 linhas), baixa coesão, ausência de validação de entrada, tratamento inadequado de exceções, falta de logs.
+
+2. Vulnerabilidades (vulnerabilities): injeção SQL/comandos, exposição de dados sensíveis, falta de validação de null, condições de corrida, uso inseguro de APIs.
+
+3. Cenários de Teste Recomendados (test_scenarios): happy path, erros/exceções, casos limite (boundary), null/empty, concorrência.
+
+CÓDIGO-FONTE:
+{{$source_code}}
+
+METADADOS:
+{{$metadata}}
+
+RESPONDA EXCLUSIVAMENTE em JSON válido seguindo este schema (sem markdown, sem texto extra):
+{
+  "class_name": "string",
+  "weak_points": [{"line": 0, "category": "string", "severity": "LOW|MEDIUM|HIGH|CRITICAL", "description": "string", "suggestion": "string"}],
+  "vulnerabilities": [{"line": 0, "type": "string", "severity": "LOW|MEDIUM|HIGH|CRITICAL", "description": "string", "cwe_id": "string", "remediation": "string"}],
+  "test_scenarios": [{"method": "string", "scenario": "string", "type": "HAPPY|ERROR|BOUNDARY|NULL|CONCURRENCY", "description": "string"}],
+  "overall_score": 0
+}

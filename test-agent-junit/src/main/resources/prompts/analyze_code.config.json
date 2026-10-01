@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "description": "Analisa código Java para pontos fracos e vulnerabilidades",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 4000,
+      "temperature": 0.3,
+      "top_p": 0.9
+    }
+  },
+  "input_variables": [
+    {
+      "name": "source_code",
+      "description": "Código-fonte Java",
+      "required": true
+    },
+    {
+      "name": "metadata",
+      "description": "Metadados extraídos",
+      "required": true
+    }
+  ]
+}
